@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Products | Online Mobile Store</title>
+    <link rel="stylesheet" href="assets/css/product.css" />
+    
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">Mobile <span>Store</span>.</h1>
+      <form action="" id="SearchForm">
+        <label for="serachbar">
+          <i class="serachIcon fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            name="serachbar"
+            id="serachbar"
+            class="SearchBar"
+            onchange="ChangeSerachbardata(this)"
+            placeholder="Search products here"
+          />
+        </label>
+      </form>
+      <i
+        class="fa-solid fa-bars-staggered"
+        id="sidebarMenubar"
+        onclick="openSideBarFunction()"
+      ></i>
+    </div>
+    <div id="sidebar" class="closeSideBar">
+      <a href="javascript:void(0)" class="closebtn"
+        ><i class="fa-solid fa-xmark"></i
+      ></a>
+      <h1 class="logo">Mobile <span>Store</span>.</h1>
+      <hr style="border-bottom: 1px solid grey; margin-bottom: 15px" />
+      <form action="" id="SearchFormInSlider">
+        <label for="serachbar">
+          <i class="serachIcon fa-solid fa-magnifying-glass"></i>
+          <input
+            type="search"
+            name="serachbar"
+            id="serachbar"
+            class="SearchBar"
+            onchange="ChangeSerachbardata(this)"
+            placeholder="Search products here"
+          />
+        </label>
+      </form>
+      <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+      <a href="#"><i class="fa-solid fa-envelope"></i>Contact</a>
+      <a href="#products"
+        ><i class="fa-solid fa-basket-shopping"></i>Products</a
+      >
+      <a href="#cart"> <i class="fa-solid fa-cart-shopping"></i>Cart </a>
+    </div>
+
+    <div id="subNvabar">
+      <ul class="logowrapper">
+        <li><img src="assets/logos/IPhone-Logo.png" alt="IPhone-Logo" /></li>
+        <li><img src="assets/logos/Samsung-Logo.png" alt="Samsung" /></li>
+        <li><img src="assets/logos/Oppo-Logo.png" alt="OPPO" /></li>
+        <li><img src="assets/logos/Xiaomi-Logo.png" alt="Xiaomi" /></li>
+        <li><img src="assets/logos/Vivo-Logo.png" alt="vivo" /></li>
+        <li><img src="assets/logos/Infinix_Logo.png" alt="infinix" /></li>
+        <li><img src="assets/logos/Relame_Logo.png" alt="realeme" /></li>
+        <li><img src="assets/logos/Itel_Logo.png" alt="itel" /></li>
+      </ul>
+    </div>
+    <!-- slider img after navbar  -->
+    <div class="hero">
+      <img src="assets/images/sliderImg/mobiles_slider.jpg" alt="" />
+    </div>
+    <div class="body">
+      <div class="headingBar">
+        <h1>Discover the Future of Mobile Shopping!</h1>
+        <p>
+          Find the perfect smartphone tailored to your needs from our vast
+          collection of top-tier brands. Shop conveniently with exclusive
+          offers, and experience seamless delivery!
+        </p>
+      </div>
+
+      <div class="ProductAndProductFilterSidebar">
+        <div class="productFilterSidebar">
+          <!-- first part of sidepart  -->
+          <div class="accordion">Sorting</div>
+          <div class="panel">
+            <label for="latestPhone">
+              <input type="radio" name="sorting" id="latestPhone" value="latest" />
+              <p>Latest Phone</p>
+            </label>
+            <label for="PriceHighToLow">
+              <input
+                type="radio"
+                name="sorting"
+                id="PriceHighToLow"
+                value="PriceDessending"
+              />
+              <p>Price(high to low)</p>
+            </label>
+            <label for="PriceLowToHigh">
+              <input
+                type="radio"
+                name="sorting"
+                id="PriceLowToHigh"
+                value="PriceAssceding"
+              />
+              <p>Price(low to high)</p>
+            </label>
+          </div>
+          <!--  part of sidepart (Mobile phone companies)  -->
+          <div class="accordion">Mobile Companies</div>
+          <div class="panel">
+            <label for="Iphone">
+              <input type="radio" name="mobilecompany" value="Iphone" id="Iphone" />
+              <p>Iphone</p>
+            </label>
+            <label for="Samsung">
+              <input type="radio" name="mobilecompany" value="Samsung" id="Samsung" />
+              <p>Samsung</p>
+            </label>
+            <label for="Xiaomi">
+              <input type="radio" name="mobilecompany" value="Xiaomi" id="Xiaomi" />
+              <p>Xiaomi</p>
+            </label>
+            <label for="Vivo">
+              <input type="radio" name="mobilecompany" value="Vivo" id="Vivo" />
+              <p>Vivo</p>
+            </label>
+            <label for="Oppo">
+              <input type="radio" name="mobilecompany" value="Oppo" id="Oppo" />
+              <p>Oppo</p>
+            </label>
+            <label for="Realme">
+              <input type="radio" name="mobilecompany" value="Realme" id="Realme" />
+              <p>Realme</p>
+            </label>
+            <label for="Itel">
+              <input type="radio" name="mobilecompany" value="Itel" id="Itel" />
+              <p>Itel</p>
+            </label>
+            <label for="Infinix">
+              <input type="radio" name="mobilecompany" value="Infinix" id="Infinix" />
+              <p>Infinix</p>
+            </label>
+          </div>
+          
+          <!-- Div to display products or error message -->
+          
+          
+          
+           <!-- part of sidepart (On the base of ram )  -->
+           <!-- <div class="accordion">RAM</div>
+           <div class="panel">
+             <label for="ram2">
+               <input type="radio" name="ram" id="ram2"  value="2/3"/>
+               <p>2/3 GB Ram</p>
+             </label>
+             
+             <label for="ram4">
+               <input type="radio" name="ram" id="ram4" value="4" />
+               <p>4 GB Ram</p>
+             </label>
+             <label for="ram6">
+               <input type="radio" name="ram" id="ram6" value="6" />
+               <p>6 GB Ram</p>
+             </label>
+             <label for="ram8">
+              <input type="radio" name="ram" id="ram8" value="8/12" />
+              <p>8/12 GB Ram</p>
+            </label>
+             <label for="ram16">
+              <input type="radio" name="ram" id="ram16" value="16" />
+              <p>16/32 GB Ram</p>
+            </label>
+             
+           </div>
+           
+           part of sidepart (On the base of Internal Storage )  
+           <div class="accordion">Internal Storage</div>
+           <div class="panel">
+             <label for="rom32">
+               <input type="radio" name="rom" id="rom32" value="32" />
+               <p>32 GB </p>
+             </label>
+             
+             <label for="rom64">
+               <input type="radio" name="rom" id="rom64" value="64" />
+               <p>64 GB </p>
+             </label>
+             <label for="rom128">
+               <input type="radio" name="rom" id="rom128" value="128" />
+               <p>128 GB </p>
+             </label>
+             <label for="rom256">
+              <input type="radio" name="rom" id="rom256" value="256" />
+              <p>256 GB </p>
+            </label>
+             <label for="rom512">
+              <input type="radio" name="rom" id="rom512" value="512" />
+              <p>512 GB </p>
+            </label>
+             
+           </div> -->
+        <!-- </div> -->
+     </div>
+
+        <!-- start here products details -->
+         
+        <div id="products"></div>
+      </div>
+      <div class="pagniation">
+
+        <div id="pagniationContainer">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+ <script src="assets/js/loadedProducts.js"></script>
+  <script>
+    const sidebar = document.getElementById("sidebar");
+    const links = sidebar.querySelectorAll("a");
+    const openSideBarFunction = () => {
+      sidebar.classList.remove("closeSideBar");
+    };
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        sidebar.classList.add("closeSideBar");
+      });
+    });
+
+    // searchbar
+    const ChangeSerachbardata = (e) => {
+      e.preventDefault();
+      console.log();
+      console.log(e.target.value);
+    };
+  </script>
+ </html>
