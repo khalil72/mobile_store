@@ -318,7 +318,7 @@ border: 1.5px solid rgb(235, 235, 235);
 @media (max-width:900px) {
     .card{
         flex: 1  calc(40% - 10px); /* Each item takes 25% width minus spacing */
-        max-width: calc(47% );
+        max-width: calc(100% );
     }
 }
 .Imgcontainer{
